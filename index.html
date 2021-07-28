@@ -1,0 +1,94 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fuzzy Traffic Light Simulator</title>
+        <link href="street.css" rel="stylesheet">
+        <link href="trafficLight.css" rel="stylesheet">
+        <link href="car.css" rel="stylesheet">
+        <style>
+            body {
+                max-height: 100vh;
+                max-width: 100vw;
+                overflow: hidden;
+                font-size: 22px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Strazile -->
+        <div class="left-street">
+            <div class="street-line"></div>
+        </div>
+        <div class="top-street">
+            <div class="street-line"></div>
+        </div>
+        <div class="right-street">
+            <div class="street-line"></div>
+        </div>
+        <div class="bottom-street">
+            <div class="street-line"></div>
+        </div>
+
+        <!-- Semafoarele -->
+        <div class="top-left-traffic-light">
+            <div class="red-light"></div>
+            <div class="yellow-light"></div>
+            <div class="green-light"></div>
+        </div>
+        <div class="top-right-traffic-light">
+            <div class="red-light"></div>
+            <div class="yellow-light"></div>
+            <div class="green-light"></div>
+        </div>
+        <div class="bottom-right-traffic-light">
+            <div class="red-light"></div>
+            <div class="yellow-light"></div>
+            <div class="green-light"></div>
+        </div>
+        <div class="bottom-left-traffic-light">
+            <div class="red-light"></div>
+            <div class="yellow-light"></div>
+            <div class="green-light"></div>
+        </div>
+
+        <!-- Element masina, doar exemplu cum ar trebui inserta in DOM -->
+        <div class="car" style="display: none">
+
+        </div>
+
+        <!-- Informatii rulare simulator -->
+        <div style="margin-left: 400px; position: absolute">
+            <div>
+                Crisp nr. masini strada verticala: <span class="main-crips"></span>
+            </div>
+            <div>
+                Fuzzy nr. masini strada verticala: <span class="main-fuzzy"></span>
+            </div>
+            <div>
+                Crisp nr. masini strada orizontala: <span class="secondary-crisp"></span>
+            </div>
+            <div>
+                Fuzzy nr. masini strada orizontala: <span class="secondary-fuzzy"></span>
+            </div>
+            <div>
+                Crisp ceata: <span class="fog-crisp"></span>
+            </div>
+            <div>
+                Fuzzy ceata: <span class="fog-fuzzy"></span>
+            </div>
+            <div>
+                Crisp durata semafor verde: <span class="output-crisp"></span>
+            </div>
+            <div>
+                Fuzzy durata semafor verde: <span class="output-fuzzy"></span>
+            </div>
+            <div>
+                Semafor verde pentru: <span class="green-light-for"></span>
+            </div>
+        </div>
+
+        <!-- Scripturi ce trebuie inserate dupa ce DOM-ul a fost procesat -->
+        <script type="text/javascript" src="fuzzy.js"></script>
+        <script type="text/javascript" src="car.js"></script>
+    </body>
+</html>

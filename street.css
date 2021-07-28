@@ -1,0 +1,64 @@
+.left-street, .right-street, .top-street, .bottom-street {
+    position: absolute;
+    z-index: 1;
+}
+
+.left-street {
+    height: 65px;
+    width: 300px;
+    margin-top: 300px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-street {
+    height: 65px;
+    width: 300px;
+    margin-top: 300px;
+    margin-left: 365px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-street {
+    height: 300px;
+    width: 65px;
+    margin-left: 300px;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-street {
+    height: 300px;
+    width: 65px;
+    margin-top: 365px;
+    margin-left: 300px;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-street .street-line, .right-street .street-line {
+    border-bottom: 2px dashed;
+    width: 100%;
+}
+
+.top-street .street-line, .bottom-street .street-line {
+    border-left: 2px dashed;
+    height: 100%;
+}

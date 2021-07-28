@@ -1,0 +1,9 @@
+.car {
+    border: 1px solid;
+    position: absolute;
+    z-index: 2;
+}
+
+.car-horizontal {
+    transform: rotate(90deg);
+}
