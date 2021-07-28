@@ -14,14 +14,14 @@ ways
 - the traffic lights will use only 2 colors (green that allows cars to drive in their direction
 and red that stops cars from moving in their direction)
 - the main street is the vertical one
-- the maximum duration for the green color is 20 seconds and the minimum is 3 seconds
+- the maximum duration for the green light is 20 seconds, the minimum is 3 seconds
 
 Input variables:
-- no cars waiting in the intersection (red color on their direction)
-- No. of cars to go green
+- number of cars waiting at the traffic lights (red color on their direction)
+- number of cars to pass the traffic light is green
 - degree of visibility (fog)
 
 Output variable
-- time in seconds for green
+- time in seconds for the green light
 
 TO INITIALIZE A NEW SIMULATION, REFRESH THE PAGE
